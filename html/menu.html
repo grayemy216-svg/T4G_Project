@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Butter &amp; Grey Bakery</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="page-menu">
+
+  <input type="checkbox" class="nav-toggle" id="nav-toggle" />
+  <label for="nav-toggle" class="nav-open-btn" aria-label="Open navigation">
+    <i class="fa-solid fa-bars"></i>
+  </label>
+
+  <nav class="mobile-nav">
+    <label for="nav-toggle" class="nav-close-btn"><i class="fa-solid fa-xmark"></i></label>
+    <a href="../index.html">Home</a>
+    <a href="menu.html" class="active">Menu</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+    <a href="shop.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+  </nav>
+
+  <div class="menu-banner">
+    <img src="../img/pancakes.jpeg" alt="Stack of pancakes" />
+  </div>
+
+  <nav class="navbar navbar--fixed" aria-label="Site navigation">
+    <a href="../index.html" class="navbar-logo" aria-label="Home">
+      <img src="../img/logo.jpeg" alt="" class="nav-logo-img" />
+    </a>
+    <a href="../index.html">Home</a>
+    <a href="menu.html" class="active">Menu</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+    <a href="shop.html" aria-label="Cart"><i class="fa-solid fa-cart-shopping"></i></a>
+  </nav>
+
+  <h2 class="menu-title">Our Menu</h2>
+
+  <div class="menu-layout">
+
+    <div class="menu-photos">
+      <img src="../img/waffles.jpeg"          alt="Waffles"    />
+      <img src="../img/cookies_on_plate.jpeg" alt="Cookies"    />
+      <img src="../img/tower_cake.jpeg"        alt="Layer cake" />
+      <img src="../img/crossaint2.jpeg"        alt="Croissants" />
+    </div>
+
+    <div class="menu-sections">
+
+      <div class="menu-section">
+        <h3><i class="fa-solid fa-cake-candles"></i> Cakes</h3>
+        <div class="menu-row"><span>Chocolate cake</span>  <span class="price">₵ 25</span></div>
+        <div class="menu-row"><span>Red velvet</span>      <span class="price">₵ 25</span></div>
+        <div class="menu-row"><span>Ice cream cake</span>  <span class="price">₵ 25</span></div>
+        <div class="menu-row"><span>Sponge cake</span>     <span class="price">₵ 25</span></div>
+      </div>
+
+      <div class="menu-section">
+        <h3><i class="fa-solid fa-bread-slice"></i> Pastries</h3>
+        <div class="menu-row"><span>Croissant</span>      <span class="price">₵ 10</span></div>
+        <div class="menu-row"><span>Chocolate chip</span> <span class="price">₵ 12</span></div>
+        <div class="menu-row"><span>Butter scotch</span>  <span class="price">₵ 10</span></div>
+        <div class="menu-row"><span>Banana bread</span>   <span class="price">₵ 20</span></div>
+        <div class="menu-row"><span>Ring doughnut</span>  <span class="price">₵ 5</span></div>
+      </div>
+
+      <div class="menu-section">
+        <h3><i class="fa-solid fa-cookie-bite"></i> Waffles</h3>
+        <div class="menu-row"><span>Plain waffle</span>         <span class="price">₵ 5</span></div>
+        <div class="menu-row"><span>Waffles with cream</span>   <span class="price">₵ 10</span></div>
+        <div class="menu-row"><span>Pancakes with syrup</span>  <span class="price">₵ 7</span></div>
+        <div class="menu-row"><span>Waffles with syrup</span>   <span class="price">₵ 8</span></div>
+      </div>
+
+    </div>
+  </div>
+
+  <nav class="tab-bar" aria-label="Quick navigation">
+    <a href="../index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+    <a href="menu.html" class="active"><i class="fa-solid fa-bars"></i><span>Menu</span></a>
+    <a href="contact.html"><i class="fa-solid fa-phone"></i><span>Contact</span></a>
+    <a href="login.html"><i class="fa-solid fa-lock"></i><span>Login</span></a>
+    <a href="shop.html"><i class="fa-solid fa-cart-shopping"></i><span>Cart</span></a>
+  </nav>
+
+</body>
+</html>

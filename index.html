@@ -1,30 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> <link rel="stylesheet" href="./src/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Butter &amp; Grey Bakery</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
-<body>
-    <body>
-        <div >
-    <nav>
-        <ul class="navigation" >
-            
-             <a href="index.html">Home</a> 
-             <a href="pages/aboutus.html">About Us</a>  
-            <a href="pages/contactus.html">Contact Us</a>
-            <a href="pages/login.html">Login</a></li>
-            <a href="pages/menu.html">Menu</a></li>
-            <a href="pages/order.html">Order</a></li>
-            <a href="pages/signup.html">Sign Up</a></li>
-            
-        </ul>
+<body class="page-home">
+
+  <!-- radio inputs drive the CSS-only carousel; must be before .hero in DOM -->
+  <input type="radio" class="slide-input" name="slide" id="slide1" checked />
+  <input type="radio" class="slide-input" name="slide" id="slide2" />
+  <input type="radio" class="slide-input" name="slide" id="slide3" />
+
+  <!-- checkbox drives the mobile nav overlay -->
+  <input type="checkbox" class="nav-toggle" id="nav-toggle" />
+  <label for="nav-toggle" class="nav-open-btn" aria-label="Open navigation">
+    <i class="fa-solid fa-bars"></i>
+  </label>
+
+  <nav class="mobile-nav">
+    <label for="nav-toggle" class="nav-close-btn" aria-label="Close navigation">
+      <i class="fa-solid fa-xmark"></i>
+    </label>
+    <a href="index.html">Home</a>
+    <a href="html/menu.html">Menu</a>
+    <a href="html/about.html">About</a>
+    <a href="html/contact.html">Contact</a>
+    <a href="html/login.html">Login</a>
+    <a href="html/shop.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+  </nav>
+
+  <section class="hero" id="hero">
+
+    <div class="hero-slides">
+      <img class="hero-slide" src="img/tower_cake.jpeg"   alt="Layered tower cake" />
+      <img class="hero-slide" src="img/crossaint2.jpeg"   alt="Fresh croissants"   />
+      <img class="hero-slide" src="img/whole_cake.jpeg"   alt="Whole celebration cake" />
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <nav class="navbar">
+      <a href="index.html" class="navbar-logo" aria-label="Butter &amp; Grey home">
+        <img src="img/logo.jpeg" alt="" class="nav-logo-img" />
+      </a>
+      <a href="index.html" class="active">Home</a>
+      <a href="html/menu.html">Menu</a>
+      <a href="html/about.html">About</a>
+      <a href="html/contact.html">Contact</a>
+      <a href="html/login.html">Login</a>
+      <a href="html/shop.html" aria-label="Cart"><i class="fa-solid fa-cart-shopping"></i></a>
     </nav>
-     </div>
-    <h1>Welcome to Butter & grey bakery</h1>
-    <h2>Freshly baked treats everyday</h2>
-    <button><a href="../pages/menu.html">View Menu</a></button>
-</body>
+
+    <div class="hero-body">
+      <h1 class="script">Welcome to Butter &amp; Grey Bakery</h1>
+      <div class="hero-tagline">
+        <p>Freshly baked treats everyday</p>
+      </div>
+      <a href="html/menu.html" class="hero-cta">Menu</a>
+    </div>
+
+    <div class="slide-dots">
+      <label for="slide1" class="slide-dot"></label>
+      <label for="slide2" class="slide-dot"></label>
+      <label for="slide3" class="slide-dot"></label>
+    </div>
+
+  </section>
+
+  <nav class="tab-bar" aria-label="Quick navigation">
+    <a href="index.html" class="active"><i class="fa-solid fa-house"></i><span>Home</span></a>
+    <a href="html/menu.html"><i class="fa-solid fa-bars"></i><span>Menu</span></a>
+    <a href="html/contact.html"><i class="fa-solid fa-phone"></i><span>Contact</span></a>
+    <a href="html/login.html"><i class="fa-solid fa-lock"></i><span>Login</span></a>
+    <a href="html/shop.html"><i class="fa-solid fa-cart-shopping"></i><span>Cart</span></a>
+  </nav>
+
 </body>
 </html>
