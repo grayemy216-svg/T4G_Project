@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — Butter &amp; Grey Bakery</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  
+</head>
+<body class="page-shop">
+
+  <input type="checkbox" class="nav-toggle" id="nav-toggle" />
+  <label for="nav-toggle" class="nav-open-btn" aria-label="Open navigation">
+    <i class="fa-solid fa-bars"></i>
+  </label>
+
+  <nav class="mobile-nav">
+    <label for="nav-toggle" class="nav-close-btn"><i class="fa-solid fa-xmark"></i></label>
+    <a href="../index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+    <a href="shop.html" class="active"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+  </nav>
+
+  <nav class="navbar navbar--fixed" aria-label="Site navigation">
+    <a href="../index.html" class="navbar-logo" aria-label="Home">
+      <img src="../img/logo.jpeg" alt="" class="nav-logo-img" />
+    </a>
+    <a href="../index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+    <a href="shop.html" class="active" aria-label="Cart"><i class="fa-solid fa-cart-shopping"></i></a>
+  </nav>
+
+  <header class="shop-topbar">
+    <img src="../img/logo.jpeg" alt="Butter &amp; Grey Bakery" class="shop-topbar-logo" />
+    <div class="search-box" role="search">
+      <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+      <input type="search" placeholder="Search items..." aria-label="Search products" />
+    </div>
+    <i class="fa-solid fa-cart-shopping" aria-label="View cart"></i>
+  </header>
+
+  <div class="shop-banner">
+    <img src="../img/cupcakes.jpeg" alt="Assorted cupcakes" />
+  </div>
+
+  <div class="shop-content">
+
+    <p class="section-label">Categories</p>
+    <div class="categories-grid">
+      <div class="category-item">
+        <img src="../img/cakes.jpeg"      alt="Cakes" />
+        <span>Cakes</span>
+      </div>
+      <div class="category-item">
+        <img src="../img/cupcakes.jpg"  alt="Cupcakes" />
+        <span>Cupcakes</span>
+      </div>
+      <div class="category-item">
+        <img src="../img/bananabread.jpg"  alt="Banana bread" />
+        <span>Banana bread</span>
+      </div>
+      <div class="category-item">
+        <img src="../img/waffles.jpeg"      alt="Waffles" />
+        <span>Waffles</span>
+      </div>
+    </div>
+
+    <h2 class="bestsellers-heading">Our Best Sellers</h2>
+
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="../img/croissant_with_strawberry.jpeg" alt="Croissant" />
+        <div class="card-info">
+          <p class="item-name">Croissant</p>
+          <p class="item-price">₵ 7</p>
+          <button class="btn-order"><i class="fa-solid fa-bag-shopping"></i> Order</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="../img/redvelvet.jpg" alt="Red velvet cake" />
+        <div class="card-info">
+          <p class="item-name">Red velvet</p>
+          <p class="item-price">₵ 15</p>
+          <button class="btn-order"><i class="fa-solid fa-bag-shopping"></i> Order</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="../img/chocolatecake.jpg" alt="Chocolate cake" />
+        <div class="card-info">
+          <p class="item-name">Chocolate cake</p>
+          <p class="item-price">₵ 45</p>
+          <button class="btn-order"><i class="fa-solid fa-bag-shopping"></i> Order</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="../img/strawberrycupcakes.jpg" alt="Strawberry cupcakes" />
+        <div class="card-info">
+          <p class="item-name">Strawberry cupcakes</p>
+          <p class="item-price">₵ 8</p>
+          <button class="btn-order"><i class="fa-solid fa-bag-shopping"></i> Order</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="../img/buttercookies.jpg" alt="Butter cookies" />
+        <div class="card-info">
+          <p class="item-name">Butter cookies</p>
+          <p class="item-price">₵ 5</p>
+          <button class="btn-order"><i class="fa-solid fa-bag-shopping"></i> Order</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="../img/cheesecake.jpg" alt="Cheesecake" />
+        <div class="card-info">
+          <p class="item-name">Cheese cake</p>
+          <p class="item-price">₵ 10</p>
+          <button class="btn-order"><i class="fa-solid fa-bag-shopping"></i> Order</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <nav class="tab-bar" aria-label="Quick navigation">
+    <a href="../index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+    <a href="menu.html"><i class="fa-solid fa-bars"></i><span>Menu</span></a>
+    <a href="contact.html"><i class="fa-solid fa-phone"></i><span>Contact</span></a>
+    <a href="login.html"><i class="fa-solid fa-lock"></i><span>Login</span></a>
+    <a href="shop.html" class="active"><i class="fa-solid fa-cart-shopping"></i><span>Cart</span></a>
+  </nav>
+
+</body>
+</html>
